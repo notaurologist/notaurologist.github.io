@@ -1,14 +1,30 @@
 $text-color: #f7596a;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dedede;
 }
 
+figure {
+  max-width: 480px;
+  min-width: 240px;
+}
+
 img {
-  float: left;
-  margin-right: 20px;
+  display: block;
+  width: 100%;
   border: #fff 10px solid;
   box-shadow: 5px 5px 5px #bcbcbc;
+}
+
+@media (min-width: 640px) {
+  img {
+    float: left;
+    margin-right: 1em;
+  }
 }
 
 .external-links li {
