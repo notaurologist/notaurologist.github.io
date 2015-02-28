@@ -1,0 +1,19 @@
+body {
+  background-color: #dedede; }
+
+img {
+  float: left;
+  margin-right: 20px;
+  border: #fff 10px solid;
+  box-shadow: 5px 5px 5px #bcbcbc; }
+
+.external-links li {
+  list-style: none; }
+
+a {
+  color: #f7596a;
+  text-decoration: none; }
+
+a:hover {
+  color: #df0b22;
+  text-decoration: underline; }

@@ -1,0 +1,26 @@
+$text-color: #f7596a;
+
+body {
+  background-color: #dedede;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  border: #fff 10px solid;
+  box-shadow: 5px 5px 5px #bcbcbc;
+}
+
+.external-links li {
+  list-style: none;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken($text-color, 20%);
+  text-decoration: underline;
+}
