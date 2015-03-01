@@ -1,5 +1,3 @@
-$text-color: #f7596a;
-
 * {
   box-sizing: border-box;
 }
@@ -32,11 +30,6 @@ img {
 }
 
 a {
-  color: $text-color;
+  color: #f7596a;
   text-decoration: none;
-}
-
-a:hover {
-  color: darken($text-color, 20%);
-  text-decoration: underline;
 }
