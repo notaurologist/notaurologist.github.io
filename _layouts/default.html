@@ -36,5 +36,14 @@
       ga('create', 'UA-6523016-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script>
+      var trackOutboundLink = function (url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+          'hitCallback': function () {
+            document.location.assign(url);
+          }
+        });
+      }
+    </script>
   </body>
 </html>
