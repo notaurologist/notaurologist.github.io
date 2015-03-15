@@ -28,7 +28,8 @@
       figure{max-width:480px;min-width:240px}
       img{display:block;width:100%;border:#fff 10px solid;box-shadow:5px 5px 5px #bcbcbc}
       @media(min-width:640px){img{float:left;margin-right:1em}}
-      li{list-style:none}
+      li{list-style:none;padding:.5em 0}
+      @media(max-width:640px){li{text-size:120%}}
       a{color:#f7596a;text-decoration:none}
       a:hover{text-decoration:underline}
     </style>
@@ -44,15 +45,8 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-6523016-1', 'auto');
       ga('send', 'pageview');
-    </script>
-    <script>
-      var trackOutboundLink = function (url) {
-        ga('send', 'event', 'outbound', 'click', url, {
-          'hitCallback': function () {
-            document.location.assign(url);
-          }
-        });
-      }
+      var tol=function(url){ga('send','event','outbound','click',url,{
+      'hitCallback':function(){document.location.assign(url)}})}
     </script>
   </body>
 </html>
