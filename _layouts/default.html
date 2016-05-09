@@ -23,30 +23,25 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <style>
-      *{box-sizing:border-box}
-      body{background-color:#dedede}
-      figure{max-width:480px;min-width:240px}
-      img{display:block;width:100%;border:#fff 10px solid;box-shadow:5px 5px 5px #bcbcbc}
-      @media(min-width:640px){img{float:left;margin-right:1em}}
-      li{list-style:none;padding:.5em 0}
-      @media(max-width:640px){li{text-size:120%}}
-      a{color:#f7596a;text-decoration:none}
-      a:hover{text-decoration:underline}
+      *{box-sizing:border-box;}
+      body{background-color:#dedede;}
+      h3{text-align:center;}
+      section{display:flex;flex-flow:row wrap;justify-content:center;}
+      figure{max-width:480px;min-width:240px;margin:0;}
+      img{width:100%;border:#fff 10px solid;box-shadow:5px 5px 5px #bcbcbc;}
+      ul{display:flex;flex-flow:row nowrap;flex:1;justify-content:space-around;padding:0;}
+      li{list-style:none;font-size:200%;}
+      a{color:#f7596a;}
+      @media(min-width:640px) and (min-height:480px){ul{flex-direction:column;flex:initial;margin:0 1em 0 0;}li:not(:first-child){margin-top:1em;}}
     </style>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
   </head>
   <body>
+    <h3>Grumble, grumble...</h3>
     <section>
       {{ content }}
     </section>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-6523016-1', 'auto');
-      ga('send', 'pageview');
-      window.tol=function(url){ga('send','event','outbound','click',url,{
-      'hitCallback':function(){document.location.assign(url)}})}
-    </script>
+    <script src="/scripts/main.js" defer async></script>
+    <!-- sudo hire me -->
   </body>
 </html>
