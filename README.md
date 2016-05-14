@@ -1,4 +1,4 @@
-# ishotfirst.github.io
+# notaurologist.github.io
 
 This is my personal "website". Basically just a bunch of links to other projects.
 
