@@ -16,7 +16,7 @@ var tol = function(evt) {
   });
 }
 
-var links = document.querySelectorAll('.outbound');
+var links = document.querySelectorAll('.js-outbound');
 for (var i = 0; i < links.length; i++) {
   links[i].onclick = tol;
 }
