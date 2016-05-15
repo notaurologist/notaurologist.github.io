@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -27,29 +26,29 @@
       *{box-sizing:border-box;}
       body{background-color:#4d4d4d;color:#ddcab8;font-family:Roboto,"San Francisco",Helvetica,Arial,sans-serif;font-size:120%;margin:1em;}
       h3{font-weight:200;margin-bottom:0;text-align:center;}
-      section,ul{display:flex;flex-direction:row;}
-      section{flex-wrap:wrap;justify-content:center;margin:0 auto;text-align:justify;}
-      .links{order:1;}
-      .photo{order:2;}
-      .intro{font-family:"Open Sans",Helvetica,Arial,sans-serif;line-height:1.4;order:3;}
+      main,ul{display:flex;flex-direction:row;}
+      main{flex-wrap:wrap;justify-content:center;margin:0 auto;text-align:justify;}
       figure{max-width:480px;min-width:240px;margin:0;}
       img{width:100%;border:#fff 10px solid;box-shadow:5px 5px 5px rgba(28, 28, 28, 0.6);}
       ul{flex-wrap:nowrap;flex:1;justify-content:space-around;padding:0;}
       li{list-style:none;font-size:2rem;}
       a{color:#f7596a;text-decoration:none;}
+      .links{order:1;}
+      .photo{order:2;}
+      .intro{font-family:"Open Sans",Helvetica,Arial,sans-serif;line-height:1.4;order:3;}
       a:not(.icon){border-bottom:1px solid;}
       a:hover{border:none;}
       @media(orientation:landscape){
-        section{flex-wrap:nowrap;}
+        main{flex-wrap:nowrap;}
         .intro{margin-left:1em;}
       }
       @media(min-width:1025px) and (min-height:480px){
         h3{margin-bottom:1em;}
-        .links-photos{display:flex;max-height:480px;}
-        .intro{margin:0 0 0 2em;max-width:640px;text-align:left;}
         p{margin:0;}
         p+p{margin-top:1em;}
         ul{flex-direction:column;flex:initial;margin:0 1em 0 0;}
+        .links-photos{display:flex;max-height:480px;}
+        .intro{margin:0 0 0 2em;max-width:640px;text-align:left;}
         li:not(:first-child){margin-top:initial;}
       }
       @media(max-width:1024px){
@@ -60,9 +59,9 @@
   </head>
   <body>
     <h3>Grumble, grumble...</h3>
-    <section>
+    <main>
       {{ content }}
-    </section>
+    </main>
     <script src="/scripts/main.js" defer async></script>
     <!-- sudo hire me -->
   </body>
