@@ -17,6 +17,6 @@ var tol = function(evt) {
 }
 
 var links = document.querySelectorAll('.js-outbound');
-for (var i = 0; i < links.length; i++) {
+for (var i = 0, len = links.length; i < len; i++) {
   links[i].onclick = tol;
 }
