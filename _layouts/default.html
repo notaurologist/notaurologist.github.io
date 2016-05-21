@@ -24,13 +24,15 @@
 </head>
 
 <body>
-  {{ content }}
-  <aside>
-    {% include links.html %}
-    <figure class="photo">
-      <img srcset="/images/profile.jpg 480w, /images/profile-240.jpg 240w" sizes="(min-width: 640px) and (min-height: 480px) 480px, 240px" src="/images/profile-240.jpg" alt="Ruby and me at the Skaha Bluffs." />
-    </figure>
-  </aside>
+  <div class="container">
+    {{ content }}
+    <aside>
+      {% include links.html %}
+      <figure class="photo">
+        <img srcset="/images/profile.jpg 480w, /images/profile-240.jpg 240w" sizes="(min-width: 640px) and (min-height: 480px) 480px, 240px" src="/images/profile-240.jpg" alt="Ruby and me at the Skaha Bluffs." />
+      </figure>
+    </aside>
+  </div>
   <script src="/scripts/svgxuse.min.js" defer async></script>
   <script src="/scripts/main.js" defer async></script>
   <script type="application/ld+json">
