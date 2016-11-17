@@ -3,10 +3,10 @@
   "@type" : "Person",
   "name" : "Jason LeMoine",
   "url" : "http://www.jasonlemoine.com",
-  "jobTitle" : "Lead Software Developer",
+  "jobTitle" : "Web Developer",
   "address" : {
-    "addressLocality" : "Seattle",
-    "addressRegion" : "WA",
+    "addressLocality" : "Philadelphia",
+    "addressRegion" : "PA",
     "addressCountry" : "US"
   },
   "sameAs" : [
@@ -16,7 +16,7 @@
     "https://www.last.fm/user/mrbaloo",
     "https://getpocket.com/@notaurologist"
   ],
-  "description" : "Jason LeMoine - Front-end Web Developer",
+  "description" : "Jason LeMoine - Web Developer",
   "contactPoint" : {
     "url" : "http://www.jasonlemoine.com/contact.html"
   }
