@@ -5,16 +5,13 @@
   "url" : "https://jasonlemoine.com/",
   "jobTitle" : "Software Engineer",
   "address" : {
-    "addressLocality" : "Woodstock",
-    "addressRegion" : "VT",
+    "addressLocality" : "Philadelphia",
+    "addressRegion" : "PA",
     "addressCountry" : "US"
   },
   "sameAs" : [
     "https://www.linkedin.com/in/jlemoine",
     "https://www.github.com/notaurologist"
   ],
-  "description" : "Jason LeMoine - Software Engineer",
-  "contactPoint" : {
-    "url" : "https://jasonlemoine.com/contact.html"
-  }
+  "description" : "Jason LeMoine - Software Engineer"
 }
